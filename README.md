@@ -17,3 +17,8 @@ GEMINI_MODEL="gemini-2.5-flash"
 ```
 * Skipped adding ChatGPT flow because it’s currently only available for premium users, and I don’t have premium access for api key of OpenAI.
 * Didn’t implemented the bonus part (AI Model selector) since I don’t have any additional premium API keys (e.g., OpenAI) to test the flow.
+
+
+
+
+# BY Hari Rajan
