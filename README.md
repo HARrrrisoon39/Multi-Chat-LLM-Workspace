@@ -1,24 +1,25 @@
-# Challenge 1 (BASIC IMPLEMENTATION)
+# Tekkr Full Stack Chat + Project Plan Preview
+
+LLM-backed chat with multi-chat support, persistence, and inline project plan previews (expandable workstreams/deliverables). Backend is Fastify + TypeScript; frontend is React + React Query + Tailwind/shadcn/ui.
+
+## Features
+- Multi-chat sidebar: create/switch chats; selection persists across reloads.
+- LLM chat: messages go to Gemini/OpenAI (configurable) with graceful mock fallback.
+- Inline project plan preview: when asking for a "project plan", the assistant embeds an expandable/collapsible plan inline (can appear mid-message via `{{PLAN}}` placeholder).
+- Loading states and auto-scroll on send.
+- Simple auth: `Authorization` header must match one of the test users.
+
+## Screenshots
+### Basic chat flow
 ![Project Plan Preview](./1.png)
 
-
-# Challenge 2 (INLINE PREVIEW FOR PROJECT PLANS)
+### Inline project plan preview
 ![Project Plan Preview](./2.png)
 
-# NOTE
-* Implemented the basic flow for now.
-* You can update the Gemini API key and add a `.env` file on the server with:
-```
-OPENAI_API_KEY=""
-OPENAI_MODEL="gpt-4o-mini"
+## Getting Started
+### Prerequisites
+- Node.js 18+
+- API key for Gemini or OpenAI (or rely on the built-in mock responses)
 
-GEMINI_API_KEY=""
-GEMINI_MODEL="gemini-2.5-flash"
-```
-* Skipped adding ChatGPT flow because it’s currently only available for premium users, and I don’t have premium access for api key of OpenAI.
-* Didn’t implemented the bonus part (AI Model selector) since I don’t have any additional premium API keys (e.g., OpenAI) to test the flow.
-
-
-
-
-# BY Hari Rajan
+### Environment
+Create `server/.env` (or set env vars) with one or both providers:
